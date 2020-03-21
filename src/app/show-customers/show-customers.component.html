@@ -1,0 +1,23 @@
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+       <th scope="col">State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of customerData">
+      <td><a routerLink="/editCustomer/{{i._id}}">{{i.firstName}}</a></td>
+      <td>{{i.lastName}}</td>
+      <td>{{i.address}}</td>
+      <td>{{i.city}}</td>
+      <td>{{i.state}}</td>
+    </tr>
+    
+  </tbody>
+</table>
+
